@@ -1,0 +1,48 @@
+<html>
+<head> 
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniware</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="image/logo.png"> </a>
+
+            <div class="link" id="navlink">
+                <i class="fa fa-window-close" onclick="hidemenu()"></i>
+
+
+                <ul>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="catagories.html">Catagories</a></li>
+                    <li><a href="new.html">New</a></li>
+                    <li><a href="about.html">About Us</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+
+        </nav>
+        <div class="textbox">
+            <h1>Welcome to Aniwave</h1><br><br>
+            <p>Complete anime watching portal, New anime watching wave has begin</p> <br><br><br>
+            <a href="form.html" class="register-button">Register Here! </a>
+        </div>
+
+    </section>
+    <script>
+        var navlink = document.getElementById("navlink");
+        function hidemenu()
+        {
+            navlink.style.right = "-200px";
+        }
+        function showmenu()
+        {
+            navlink.style.right = "0";
+        }
+    </script>
+</body>
+</html>
